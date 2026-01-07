@@ -63,6 +63,11 @@
         </div>
       </div>
     </section>
+    <section class="code-container">
+      <div class="qr-code">
+        <img src="../../assets/qrcode.png" alt="">
+      </div>
+    </section>
   </div>
 </template>
 
@@ -305,7 +310,21 @@ const features = [
   font-size: 0.7rem;
   line-height: 1.3;
 }
-
+/* 二维码 */
+.code-container{
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+}
+.qr-code{
+  width: 40%;
+}
+.qr-code img{
+    width: 100%;
+ }
 @media (max-width: 768px) {
   .demo-section {
     grid-template-columns: 1fr;
